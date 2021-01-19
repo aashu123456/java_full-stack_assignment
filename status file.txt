@@ -2,4 +2,4 @@ ASSIGNMENTS DOCUMENT
 
 1. MYSQL ASSIGNMENT---> Some questions are left---> please explain foreign key concept  for references with two tables .
 
-2. JAVA CORE ASSIGNMENTS---> ALL DONE
+2. JAVA CORE ASSIGNMENTS---> ALL DONE except 6
