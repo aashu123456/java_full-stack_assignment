@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Page</title>
+    <script type="text/Javascript" src="customervalidation.js"></script>
     <link rel="stylesheet" href="customersignup.css">
 </head>
 <body>
@@ -11,9 +12,9 @@
     
     <div class="form-box">
         <h1> Welcome to You</h1><br>
-    <form action="index.html" method="POST">
+    <form action="" method="POST" onsubmit="return validate()">
     <label for="">First Name :</label>
-    <input type="text" class="fn" name="fname"><br><br>
+    <input type="text" class="fn" name="fname" ><br><br>
     <label for="">Gender :</label>
     <input type="radio" name="gg" id="male" value="male"><label for="">Male</label>
     <input type="radio" name="gg" id="female" value="female"><label for="">Female</label><br><br>
@@ -22,9 +23,12 @@
     <label for="">Mobile no:</label>
     <input type="number" name="pnum" class="fn"><br><br>
     <label for="">User Name :</label>
-    <input type="text" name="user" class="fn"><br><br>
+    <input type="text" name="userid" class="fn" id="userid">
+     <span id="e1" style="color: red;"></span><br><br>
+
     <label for="">Password :</label>
-    <input type="password" name="pass" class="fn"><br><br>
+    <input type="password" name="passid" class="fn" id="passid" >
+    <span id="e1" style="color: red;"></span><br><br>
     
         <input type="button" id="btn2" value="Submit">
         

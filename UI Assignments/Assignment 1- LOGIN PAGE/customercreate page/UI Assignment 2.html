@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/Javascript"></script>
+</head>
+<body>
+    
+    <script type="text/Javascript">
+    do{
+       alert("choose \n1. for Addition\n2. for Substraction\n3.for exit");
+       var choice=prompt("Enter your choice");
+       var flag=true;
+       switch(choice){
+
+       case 1: alert("you are going to perform addition of two numbers");
+                 var a = prompt("Enter the value of a ")
+                 var b = prompt("Enter the value of b ")
+                 var sum = eval(a)+eval(b);
+                alert("Addition result is "+sum);
+
+               break;
+       
+       case 2: alert("you are going to perform substraction of two numbers") ;
+                 var a = prompt("Enter the value of a ")
+                 var b = prompt("Enter the value of b ")
+                 var diff
+                 if(a>b){
+                    diff = eval(a)-eval(b);
+                 }else{
+                      diff=eval(b)-eval(a);
+                 }
+               alert("Substraction result is "+diff);
+ 
+               break;
+
+        case 3:flag=false;
+              break;
+
+        default: alert("wrong choice");
+                 break;
+       }
+       }while(flag);
+    
+</script>
+</body>
+</html>
