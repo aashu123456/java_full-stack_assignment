@@ -4,6 +4,7 @@ body{
 }
 
 .form-box{
+    
     color:#bee5d3;
     font-size: 18px;
     width: 280px;
@@ -12,6 +13,7 @@ body{
     left: 50%;
     
     transform: translate(-50%,-50%);
+    
     
 }
 .fn{
