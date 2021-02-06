@@ -5,7 +5,7 @@ body{
 
 .form-box{
     
-    color:#bee5d3;
+    color:#75cfb8;
     font-size: 18px;
     width: 280px;
     position: absolute;
@@ -28,6 +28,7 @@ body{
     margin: 4px 0;
     color: #3fc1c9;
     border-bottom: 2px solid #4caf50;
+    
 }
 
 h1{

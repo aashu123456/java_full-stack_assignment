@@ -6,34 +6,61 @@
     <title>Customer Page</title>
     <script type="text/Javascript" src="customervalidation.js"></script>
     <link rel="stylesheet" href="customersignup.css">
+    <!-- <script type="text/Javascript">
+        function validate() {
+    
+    var user = document.getElementById("userid").value;
+    var pass = document.getElementById("passid").value;
+    if(user.length==0){
+      document.getElementById("e1").innerHTML="User Name is required"
+      document.getElementById("e2").innerHTML=""
+        return false;
+    }else if(pass.length==0){
+        document.getElementById("e2").innerHTML="Password is required"
+        document.getElementById("e1").innerHTML=""
+        return false;
+    }
+    else {
+        return true;
+    }
+  }
+    </script> -->
+    
 </head>
 <body>
 
     
     <div class="form-box">
         <h1> Welcome to You</h1><br>
-    <form action="" method="POST" onsubmit="return validate()">
+    <form action="" method="GET" onsubmit="return validate()">
     <label for="">First Name :</label>
-    <input type="text" class="fn" name="fname" id="fname" ><br><br>
+    <input type="text" class="fn" name="fname" id="fname" >
+    <span id="e1" style="color: red;"></span>
+    <br><br>
     <label for="">Last Name :</label>
     <input type="text" class="fn" name="lname" id="lname" ><br><br>    
-
     <label for="">Gender :</label>
     <input type="radio" name="gg" id="male" value="male"><label for="">Male</label>
-    <input type="radio" name="gg" id="female" value="female"><label for="">Female</label><br><br>
+    <!-- <span id="e2" style="color: red;"></span> -->
+    <input type="radio" name="gg" id="female" value="female"><label for="">Female</label>
+     <br><br>
+    <!-- <span id="e3" style="color: red;"></span><br><br> -->
     <label for="">Age :</label>
-    <input type="number" name="age" class="fn" id="age"><br><br>
+    
+    <input type="number" name="age" class="fn" id="age">
+    <span id="e4" style="color: red;"></span><br><br>
     <label for="">Mobile no:</label>
-    <input type="number" name="pnum" class="fn" id="mbnum"><br><br>
+    <input type="number" name="pnum" class="fn" id="pnum">
+    <span id="e5" style="color: red;"></span><br><br>
     <label for="">User Name :</label>
-    <input type="text" name="userid" class="fn" id="userid">
-     <span id="e1" style="color: red;"></span><br><br>
+    <input type="text" name="userid" class="fn" id="userid" >
+     <span id="e6" style="color: red;"></span><br><br>
 
     <label for="">Password :</label>
     <input type="password" name="passid" class="fn" id="passid" >
-    <span id="e1" style="color: red;"></span><br><br>
+    <span id="e7" style="color: red;"></span><br><br>
     
-        <input type="submit" id="btn2" value="Submit">
+        <input type="submit" id="btn2" value="Submit" onclick="return validate()">
         
         <input type="reset" id="btn1" value="Clear">
        
